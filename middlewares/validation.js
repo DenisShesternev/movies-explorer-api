@@ -56,7 +56,7 @@ const validationCreateMovie = celebrate({
 
 const validationDeleteMovie = celebrate({
   params: Joi.object().keys({
-    id: Joi.string().required().hex().length(24),
+    movieId: Joi.string().required().hex().length(24),
   }),
 });
 
